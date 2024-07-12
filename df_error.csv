@@ -1,0 +1,26 @@
+Время ошибки,Тип и место ошибки
+2023-09-05 19:00:04,"  + Exception Group Traceback (most recent call last):
+  |   File ""C:\Users\agd01\Cointegration_trading_bot\main3.py"", line 636, in <module>
+  |     loop.run_until_complete(main())
+  |   File ""C:\Users\agd01\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py"", line 653, in run_until_complete
+  |     return future.result()
+  |            ^^^^^^^^^^^^^^^
+  |   File ""C:\Users\agd01\Cointegration_trading_bot\main3.py"", line 614, in main
+  |     async with asyncio.TaskGroup() as tg:
+  |   File ""C:\Users\agd01\AppData\Local\Programs\Python\Python311\Lib\asyncio\taskgroups.py"", line 147, in __aexit__
+  |     raise me from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (2 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File ""C:\Users\agd01\Cointegration_trading_bot\main3.py"", line 362, in strategy_two
+    |     data_set_shape = df1.shape[0] - 1
+    |                      ^^^^^^^^^
+    | AttributeError: 'NoneType' object has no attribute 'shape'
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File ""C:\Users\agd01\Cointegration_trading_bot\main3.py"", line 521, in strategy_three
+    |     data_set_shape = df1.shape[0] - 1
+    |                      ^^^^^^^^^
+    | AttributeError: 'NoneType' object has no attribute 'shape'
+    +------------------------------------
+"
