@@ -37,8 +37,8 @@ warnings.filterwarnings("ignore")
 
 
 class Config:
-    ClientIds = ('781685REN0U',)  # Торговые счёта
-    AccessToken = 'CAEQh6s0GhhstbLBt3jNsTXGj/CJcGBL4e8LyYF/OBg='  # Торговый токен доступа (CAEQ6o0GhggalaQl8rwq1khLtAgjA4Ly7c6FEPKg4=)
+    ClientIds = ('',)  # Торговые счёта
+    AccessToken = ''  # Торговый токен доступа ()
 
     timeframes = {'M1': 1, 'M10': 10, 'H1': 60, 'D1': 24, 'W1': 7, 'm31': 31, 'Q1': 4}
     timeframes_list = [i for i in timeframes]
